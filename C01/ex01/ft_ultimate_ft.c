@@ -1,30 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hawu <hawu@student hawu@student.42ade      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/30 13:59:49 by hawu              #+#    #+#             */
-/*   Updated: 2025/02/03 14:52:56 by hawu             ###   ########.fr       */
+/*   Created: 2025/01/30 14:52:06 by hawu              #+#    #+#             */
+/*   Updated: 2025/01/30 14:54:46 by hawu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+#include<unistd.h>
 
-void	ft_ft(int *nbr)
+void	ft_ultimate_ft(int *********nbr);
 {
-	*nbr = 42;
-}
-
-
-#include <stdio.h>
-int	main()
-{
-	int	n;
-
-	n = 5;
-	printf("Before:\tAddress of n = %p\nValue of n = %d\n\n", &n, n);
-	ft_ft(&n);
-	printf("After:\tAddress of n = %p\nValue of n = %d\n", &n, n);
-	return('0');
+	*********nbr = 42;
 }
