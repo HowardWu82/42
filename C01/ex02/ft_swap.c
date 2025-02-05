@@ -1,23 +1,30 @@
 //insert 42 header here
 #include <unistd.h>
 
-void	ft_swap(int *a, int *b);
+void	ft_swap(int *a, int *b)
 {
-	int	swap;
-	int	*a;
-	int	*b;
+	int	*swap;
 	
-	*a = swap;
-	swap = *b;
-	*b = *a;
+	*swap = *a;
+	*a = *b;
+	*b = *swap;
 }
-
-void	ft_putchar(char *message)
-{
-    while (*message)
-        write(1, message++, 1)
-}
+/* 
 #include <stdio.h>
 int	main()
 {
+	int	a;
+	int	b;
+	int	swap;
+
+	a = 1;
+	b = 2;
 	
+	printf("a = %d", a);
+	printf("b = %d", b);
+	ft_swap(&a, &b);
+	printf("a = %d", a);
+	printf("b = %d", b);
+	return(0);
+}
+*/	
