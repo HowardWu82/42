@@ -21,12 +21,13 @@ int	ft_str_is_alpha(char *str)
 	answer = 1;
 	while (str[start] != '\0')
 	{
-		if ((str[start] >= 'A' && str[start] <= 'Z')
-			|| (str[start] >= 'a' && str[start] <= 'z'))
+		if ((str[start] >= 'A' && str[start] <= 'Z') 
+		|| (str[start] >= 'a' && str[start] <= 'z'))
 		{
 			yesorno = 1;
 			start++;
 		}
+
 		else
 		{
 			answer = 0;
@@ -35,17 +36,29 @@ int	ft_str_is_alpha(char *str)
 	}
 	return (answer);
 }
-/*
-int	main(void)
 
-{
-	char	str[] = "abcdefg";
-	char	str3[] = "";
-	char	str2[] = "afdsg9324";
+int	main(void)
 	
+{
+	char	str[]="abcdefg";
+	char	str3[]="";
+	char	str2[]="afdsg9324";
+
+/*
+	out2 = 3;
+	printf("out2 = %d\n", out2);
+	out2 = 987;
+	printf("out2 = %d\n", out2);
+	out2 = retnum();
+	printf("out2 = %d\n", out2);
+
+
+
+	output = ft_str_is_alpha(str);d
+
 	printf("answer = %d", ft_str_is_alpha(str));
 	printf("answer = %d", ft_str_is_alpha(str3));
 	printf("answer = %d", ft_str_is_alpha(str2));
 	return(0);
-}
 */
+}
