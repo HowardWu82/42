@@ -1,39 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hawu <hawu@student hawu@student.42ade      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/12 18:12:02 by hawu              #+#    #+#             */
-/*   Updated: 2025/02/12 18:59:36 by hawu             ###   ########.fr       */
+/*   Created: 2025/02/13 18:10:35 by hawu              #+#    #+#             */
+/*   Updated: 2025/02/13 18:54:23 by hawu             ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************* */
+/* ************************************************************************** */
 #include <stdio.h>
 
-int 	ft_strcmp(char *s1, char *s2)
+char	*ft_strcat(char *dest, char *src)
 {
 	int	i;
+	int	i2;
 	
 	i = 0;
-	
-	while (s1[i] != '\0' || s2[i] != '\0')
+	i2 = 0;
+	while (dest[i]!= '\0')
 	{
-		if (s1[i] != s2[i])
-		{
-			return (s1[i] - s2[i]);
-		}
 		i++;
 	}
-	return (0);
+	while (src[i] != '\0')
+	{
+		dest[i + 1] = dest[i2];
+		dest[i2] = src[i];
+		i2++;
+		i++;
+	}
+	return (dest);
 }
-/*
+
 int	main(void)
 {
-	char s1[] = "abcd";
-	char s2[] = "abcdefg";
+	char src[] = "Hello,";
+	char dest[] = " World!";
 	
-	printf("answer = %d", ft_strcmp(s1, s2));
+	printf("this should print the answer = %s", ft_strcat(dest, src));
 	return (0);
 }
-*/
